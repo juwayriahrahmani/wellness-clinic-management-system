@@ -1,0 +1,1 @@
+web: java -jar appointment-service/target/appointment-service-1.0.0.jar
