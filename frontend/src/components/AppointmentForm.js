@@ -68,10 +68,10 @@ const AppointmentForm = ({ onAppointmentCreated }) => {
 
       const appointmentData = {
         clientId: formData.clientId,
-        time: appointmentTime.toISOString(),
+        time: appointmentTime.toISOString().slice(0, 19),
         notes: formData.notes.trim() || null
       };
-
+      
       const createdAppointment = await createAppointment(appointmentData);
       
       setSuccess('Appointment scheduled successfully!');

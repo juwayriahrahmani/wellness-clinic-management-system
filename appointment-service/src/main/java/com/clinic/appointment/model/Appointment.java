@@ -17,12 +17,12 @@ public class Appointment {
 
     @NotBlank(message = "Client ID is required")
     @Column(name = "client_id", nullable = false)
-    @JsonProperty("client_id")
+    @JsonProperty("clientId")
     private String clientId;
 
     @NotNull(message = "Appointment time is required")
     @Column(nullable = false)
-    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'")
+    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss")
     private LocalDateTime time;
 
     @Column(length = 500)
