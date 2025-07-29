@@ -23,3 +23,8 @@ A microservices-based application for managing clients and appointments in a wel
 2. Start backend services
 3. Launch React frontend
 4. Access the application at http://.localhost:3000
+
+Deployed on Heroku:
+Frontend: https://wellness-clinic-app-01b699c2055b.herokuapp.com
+Client Service: https://client-service-app-582adc026b78.herokuapp.com
+Appointment Service: https://appointment-service-app-dc5b59d8a050.herokuapp.com
